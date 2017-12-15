@@ -1,3 +1,5 @@
+
+/* COMP 24F */
 *{
     margin: 0;
     padding: 0;
@@ -12,25 +14,56 @@ body{
     font-weight: 500;
     background-color: rgba(240, 208, 208, 0.651)
 }
-/* COMP 23F 23E  */
+/* COMP 23F 23E 27C 27D 27G 54C 54D*/
 header{
     width: 100%;
-    height: 5vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 6vh;
+    z-index: 2;
     position: fixed;
-    background-color: rgba(240, 219, 219, 0.555);
+    background-color: rgba(65, 44, 44, 0.541);
+    /* background-color: rgba(240, 219, 219, 0.555); */
 }
-/* COMP 25D 25F */
-ul>li{
-    display: block;
-    float: left;
-    margin-right: 20px;
-}
-/* COMP 22C-2 */
-.projects img{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    margin: auto;
+a:link{
+    text-decoration: none;
 }
 
+/* COMP 24C 25D 25F 22C-3*/
+.main-nav>li{
+    display: block;
+    float: right;
+    margin-right: 20px;
+    color: rgb(179, 140, 140);
+}
+
+/* COMP 22C-2 54E*/
+.projects img{
+    width: 40vw;
+}
+.projects{
+    display: flex;
+    top: 100px;
+    position: relative;
+}
+/* COMP 27E */
+.pic-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+/* COMP 25C */
+.pic-small{
+    margin: 10px;
+    position: relative;
+
+}
+/* COMP 25C */
+h1{
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    color: white;
+}
