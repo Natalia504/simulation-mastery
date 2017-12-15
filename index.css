@@ -61,6 +61,11 @@ a:link{
     border: 5px solid white;
     padding: 5px 5px 1px 5px;
 }
+/* COMP 22C-1 */
+#adventure{
+    color: rgb(228, 159, 159);
+}
+
 /* COMP 25C */
 h1{
     position: absolute;
@@ -68,6 +73,12 @@ h1{
     left: 10px;
     color: white;
 }
+
+/* COMP 22C-5 */
+header + section{
+    border: 3px solid red;
+}
+
 .video{
     height: 500px;
     margin-top: 50px;
