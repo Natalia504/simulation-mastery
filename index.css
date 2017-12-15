@@ -15,20 +15,20 @@ body{
     background-color: rgba(240, 208, 208, 0.651)
 }
 /* COMP 23F 23E 27C 27D 27G 54C 54D*/
+
 header{
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 6vh;
-    z-index: 2;
-    position: fixed;
-    background-color: rgba(65, 44, 44, 0.541);
-    /* background-color: rgba(240, 219, 219, 0.555); */
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.116), rgba(0, 0, 0, 0.7)),
+    url('img/4.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
+/* COMP  */
 a:link{
     text-decoration: none;
 }
+
 
 /* COMP 24C 25D 25F 22C-3*/
 .main-nav>li{
@@ -54,11 +54,12 @@ a:link{
     justify-content: center;
     align-items: center;
 }
-/* COMP 25C */
+/* COMP 25C 24D 24E*/
 .pic-small{
     margin: 10px;
     position: relative;
-
+    border: 5px solid white;
+    padding: 5px 5px 1px 5px;
 }
 /* COMP 25C */
 h1{
@@ -66,4 +67,12 @@ h1{
     bottom: 30px;
     left: 10px;
     color: white;
+}
+.video{
+    height: 500px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 100px;
 }
