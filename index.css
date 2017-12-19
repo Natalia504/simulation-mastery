@@ -18,12 +18,37 @@ body{
 
 header{
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.116), rgba(0, 0, 0, 0.7)),
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.164), rgba(0, 0, 0, 0.7)),
     url('img/4.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
 }
+
+header>h2{
+    color: white;
+    font-size: 400%;
+    text-align: center;
+    position: relative;
+    animation: slideInDown 2s ease-out; 
+}
+@keyframes slideInDown{
+    0%{
+        top: 50px;
+    }
+    25%{
+        top:100px;
+    }
+    50%{
+        top: 200px;
+    }
+    75%{
+        top: 250px;
+    }
+    100%{ top: 300px;
+    }
+}
+
 /* COMP  */
 a:link{
     text-decoration: none;
@@ -38,10 +63,21 @@ a:link{
     color: rgb(179, 140, 140);
 }
 
+.main-nav a:focus{
+background: lightgrey;
+}
+li:nth-child(3){
+    background: red;
+}
+input:disabled{
+    background: lightgrey;
+}
+
 /* COMP 22C-2 54E*/
 .projects img{
     width: 40vw;
 }
+
 .projects{
     display: flex;
     top: 100px;
@@ -60,19 +96,31 @@ a:link{
     position: relative;
     border: 5px solid white;
     padding: 5px 5px 1px 5px;
+    box-shadow: 5px 5px 5px 5px;
+}
+.pic-small img:hover{
+    width: 45vw;
+    transition: ease-in-out 0.5s;
 }
 /* COMP 22C-1 */
 #adventure{
     color: rgb(228, 159, 159);
+
 }
 
 /* COMP 25C */
 h1{
+    width: 200px;
+    height: 50px;
     position: absolute;
     bottom: 30px;
     left: 10px;
     color: white;
+    /* border: 3px solid lime; */
+    overflow: hidden;
+    text-overflow: scroll;
 }
+
 
 /* COMP 22C-5 */
 header + section{
